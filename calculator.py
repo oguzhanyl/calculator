@@ -1,9 +1,10 @@
 from asart import logo
 import os
+# Function that clears the terminal
 def clear_terminal():
    os.system("cls" if os.name == "nt" else "clear")
 
-
+# Mathematical operators
 def add(n1, n2):
   return n1 + n2
 
@@ -30,7 +31,8 @@ def calculator():
   for symbol in operations:
     print(symbol)
   should_continue = True
- 
+    
+ # Loop that contiues mathematical operations
   while should_continue:
     operation_symbol = input("Pick an operation: ")
     num2 = float(input("What's the next number?: "))
